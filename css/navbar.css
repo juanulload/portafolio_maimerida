@@ -1,0 +1,111 @@
+/* ///
+/// Globales
+///  */
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.385);
+    backdrop-filter: blur(25px);
+    position: fixed;
+    top: 2rem;
+    left: 4rem;
+    width: fit-content;
+    height: fit-content;
+    z-index: 3;
+    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.114);
+    border-radius: 2.5px;
+}
+
+
+#map {
+    color: rgb(255, 255, 255);
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    border: 2px solid rgba(61, 22, 46, 0.01);
+    
+    justify-content: space-between;
+    gap: 1.25rem;
+    height: fit-content;
+    padding: 0;
+    margin: 0;
+    align-items:center;
+}
+
+
+#map li,
+#map li button {
+    color: rgb(255, 255, 255);
+    font-family: 'IBM Plex Mono';
+    font-weight: 200;
+    font-size: 1.25rem;
+    transition: color 0.25s;
+}
+
+
+#map li button {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    text-decoration: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+
+#map a:link,
+a:visited,
+a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* ///
+/// ESTILOS individuales
+///  */
+
+#map li#nav_bio {
+    padding-left: 1rem;
+    /* padding-right: 0.25rem; */
+}
+
+
+#map li#email { 
+    cursor: pointer;
+}
+
+#map li#lang_es {
+    margin: 0;
+}
+
+#map li#lang_en {
+    padding-right: 1.2rem;
+}
+
+
+#map li#separ {
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+}
+
+
+
+/* ESTADOS de link */
+
+/* link active */
+
+
+#map li.active, #map li button.active {
+    font-weight: 500;
+    font-size: 1.32rem;
+}
+
+
+/* ///
+/// link hover
+///  */
+
+#map .link_map:hover:not(.active),
+#map li button:hover:not(.active) {
+    color: rgba(255, 255, 255, 0.781);
+    /* opacity: 0.75; */
+}

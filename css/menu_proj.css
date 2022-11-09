@@ -1,0 +1,52 @@
+
+#menu_projects {
+    color: rgba(218, 218, 218, 0.737);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+
+    background: url('../assets/13.jpg') 25%/cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    backdrop-filter: blur(7px) saturate(100%) brightness(100%);
+}
+
+
+#cont_pr {
+    position:absolute;
+
+    top: 7%;
+    left: 12%;
+    margin: 0;
+    
+}
+
+#cont_pr li {
+    list-style-type: none;
+}
+
+#cont_pr a{
+    position:relative;
+    text-decoration: none;
+    font-family: 'IBM Plex Sans';
+    font-weight: 300;
+    line-height: 1.2;
+    font-size: 8rem;
+}
+
+#pr_portfolio {
+    left: 7rem;
+}
+
+#pr_process {
+    left: 17rem;
+}
+
+#pr_experimental {
+    left: 4rem;
+}
+
+
+
+
+
