@@ -1,6 +1,6 @@
 
 #menu_projects {
-    color: rgba(218, 218, 218, 0.737);
+    /* color: rgba(218, 218, 218, 0.737); */
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -12,41 +12,41 @@
 }
 
 
-#cont_pr {
+a.cont_pr  {
+    color: rgba(255, 255, 255, 0.637);
+    padding-inline: 2rem;
     position:absolute;
-
-    top: 7%;
-    left: 12%;
-    margin: 0;
-    
-}
-
-#cont_pr li {
-    list-style-type: none;
-}
-
-#cont_pr a{
-    position:relative;
     text-decoration: none;
     font-family: 'IBM Plex Sans';
     font-weight: 300;
-    line-height: 1.2;
-    font-size: 8rem;
+    background-color: rgba(0, 0, 0, 0.21);
+    font-size: 6rem;
+    border: 2px solid white;
+    border-radius: 2px;
+    backdrop-filter: blur(80px);
 }
 
+
 #pr_portfolio {
-    left: 7rem;
+    top: 8rem;
+    left: 35%;
 }
 
 #pr_process {
-    left: 17rem;
+    top: 19rem;
+    left: 20%;
 }
 
 #pr_experimental {
-    left: 4rem;
+    top: 30rem;
+    left: 25%;
 }
 
 
 
+a.cont_pr:hover {
+    color: rgba(255, 255, 255, 0.937);
+    /* text-shadow: ; */
+}
 
 
