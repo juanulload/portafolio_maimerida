@@ -3,14 +3,14 @@
 ///  */
 
 .navbar {
-    background-color: rgba(0, 0, 0, 0.522);
+    background-color: rgba(0, 0, 0, 0.685);
     position: absolute;
     top: 2rem;
     left: 4rem;
     width: fit-content;
     height: fit-content;
     z-index: 3;
-    border: 1px solid rgba(255, 255, 255, 0.363);
+    border: 1px solid rgba(255, 255, 255, 0.208);
     border-radius: 3px;
 }
 
@@ -61,7 +61,7 @@ a:active {
 
 
 #map .link_map#lang_es{
-    border-left: 1px solid rgba(255, 255, 255, 0.323);
+    border-left: 1px solid rgba(255, 255, 255, 0.225);
 }
 
 
