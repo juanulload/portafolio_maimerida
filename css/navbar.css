@@ -3,29 +3,21 @@
 ///  */
 
 .navbar {
-    background-color: rgba(0, 0, 0, 0.79);
-    backdrop-filter: blur(8px);
+    background-color: rgba(0, 0, 0, 0.522);
     position: absolute;
     top: 2rem;
     left: 4rem;
     width: fit-content;
     height: fit-content;
     z-index: 3;
-    /* box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.114); */
-    border: 0.2px solid rgba(55, 55, 55, 0.144);
+    border: 1px solid rgba(255, 255, 255, 0.363);
     border-radius: 3px;
 }
 
-
 #map {
-    color: rgb(255, 255, 255);
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    /* border: 5px solid rgba(0, 0, 0, 0); */
-    
-    justify-content: space-between;
-    gap: 1.25rem;
     height: fit-content;
     padding: 0;
     margin: 0;
@@ -33,26 +25,29 @@
 }
 
 
-#map li,
-#map li button {
-    color: rgba(255, 255, 255, 0.556);
-    font-family: 'IBM Plex Mono';
-    font-weight: 300;
-    font-size: 1.25rem;
-    transition: color 0.25s;
+#map .link_map {
+    padding-inline: 1rem;
+    padding-block: 0.15rem;
+
 }
 
 
-#map li button {
+
+#map .link_map, .lang_b {
+    color: rgba(255, 255, 255, 0.705);
+    font-family: 'IBM Plex Mono';
+    font-weight: 300;
+    font-size: 1.25rem;
+    transition: color 0.1s ease-in, text-shadow 0.1s ease-in;
     background-color: rgba(255, 255, 255, 0);
-    border: none;
     text-decoration: none;
-    padding: 0;
     cursor: pointer;
 }
 
 
-#map a:link,
+
+
+#map .link_map a:link,
 a:visited,
 a:active {
     text-decoration: none;
@@ -64,30 +59,10 @@ a:active {
 /// ESTILOS individuales
 ///  */
 
-#map li#nav_bio {
-    padding-left: 1rem;
-    /* padding-right: 0.25rem; */
+
+#map .link_map#lang_es{
+    border-left: 1px solid rgba(255, 255, 255, 0.323);
 }
-
-
-#map li#email { 
-    cursor: pointer;
-}
-
-#map li#lang_es {
-    margin: 0;
-}
-
-#map li#lang_en {
-    padding-right: 1.2rem;
-}
-
-
-#map li#separ {
-    font-size: 1.5rem;
-    color: rgb(255, 255, 255);
-}
-
 
 
 /* ESTADOS de link */
@@ -95,11 +70,9 @@ a:active {
 /* link active */
 
 
-#map li.active, #map li button.active {
+#map .link_map.active, .link_map.lang_b.active {
     font-weight: 500;
-    font-size: 1.28rem;
-    color: rgba(255, 255, 255, 0.832);
-
+    color: #ffffffeb;
 }
 
 
@@ -107,8 +80,8 @@ a:active {
 /// link hover
 ///  */
 
-#map .link_map:hover:not(.active),
-#map li button:hover:not(.active) {
-    color: #ffec5fb7;
-    /* opacity: 0.75; */
+#map .link_map:hover:not(.active), 
+.link_map.lang:hover:not(button.lang_b .active){
+    color: #fffffff9;
+    text-shadow: 1px 0px 5px rgba(255, 255, 255, 0.429);
 }
