@@ -3,7 +3,7 @@
 ///  */
 
 .navbar {
-    background-color: rgba(0, 0, 0, 0.401);
+    background-color: rgba(0, 0, 0, 0.79);
     backdrop-filter: blur(8px);
     position: absolute;
     top: 2rem;
@@ -12,7 +12,7 @@
     height: fit-content;
     z-index: 3;
     /* box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.114); */
-    border: 0.2px solid rgba(103, 103, 103, 0.16);
+    border: 0.2px solid rgba(55, 55, 55, 0.144);
     border-radius: 3px;
 }
 
@@ -22,7 +22,7 @@
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    border: 5px solid rgba(0, 0, 0, 0);
+    /* border: 5px solid rgba(0, 0, 0, 0); */
     
     justify-content: space-between;
     gap: 1.25rem;
@@ -35,7 +35,7 @@
 
 #map li,
 #map li button {
-    color: rgb(255, 255, 255);
+    color: rgba(255, 255, 255, 0.556);
     font-family: 'IBM Plex Mono';
     font-weight: 300;
     font-size: 1.25rem;
@@ -97,7 +97,9 @@ a:active {
 
 #map li.active, #map li button.active {
     font-weight: 500;
-    font-size: 1.30rem;
+    font-size: 1.28rem;
+    color: rgba(255, 255, 255, 0.832);
+
 }
 
 
@@ -107,6 +109,6 @@ a:active {
 
 #map .link_map:hover:not(.active),
 #map li button:hover:not(.active) {
-    color: rgba(255, 255, 255, 0.781);
+    color: #ffec5fb7;
     /* opacity: 0.75; */
 }
