@@ -15,17 +15,19 @@
 
 <body id="index">
 
-    <nav class="navbar">
-        <ul id="map">
-
-            <li class="link_map active" id="nav_bio"> <a href="./index.html">bio</a></li>
-            <li class="separator" id="separ">|</li>
-            <li class="link_map " id="projects"> <a href="./menu_proj.html">proyectos</a></li>
-            <li class="separator" id="separ">|</li>
-            <li class="link_map" id="contacto"><a href="./contact.html">contacto</a></li>
-            <li class="separator" id="separ">|</li>
-            <li class="b_lang" id="lang_es"><button id="es" class=""><a href="./index.html">esp</a></button></li>
-            <li class="b_lang" id="lang_en"><button id="en" class="active"><a href="./index-en.html">eng</a></button></li>
+    <nav role="navigation" class="navbar">
+        <ul class="main">
+            <li class="active"> <a href="./index.html">bio</a></li>
+            <li class=""><a href="#">projects</a>
+                <ul class="dropdown">
+                    <li class="drop-item"><a  href="#">portfolio</a></li>
+                    <li><a href="#">in process</a></li>
+                    <li><a href="#">experimental</a></li>
+                </ul>
+            </li>
+            <li class="" id="contacto"><a href="./contact-en.html">contact</a></li>
+            <li class="" id="lang_es"><a href="./index.html">esp</a></li>
+            <li class="active" id="lang_en"><a href="#">eng</a></li>
         </ul>
     </nav>
 
@@ -69,8 +71,6 @@
 
     </div>
 
-
-    <script src="./js/app.js"></script>
 
 </body>
 
