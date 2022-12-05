@@ -5,7 +5,7 @@
 }
 
 #portf_page {
-    background-image: url("/assets/menu_img.jpeg");
+    background-image: url("../assets/menu_img.jpeg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 150%;
