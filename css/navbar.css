@@ -2,23 +2,24 @@
 /// Globales
 ///  */
 :root {
-    --back-color-navbar: rgba(0, 0, 0, 0.76);
-    --navbar-border-radius: 3px;
+    --back-color-navbar: rgb(0, 0, 0);
+    --navbar-border-radius: 2px;
 }
 
 .navbar {
-    color: rgba(255, 255, 255, 0.61);
+    color: rgba(255, 255, 255, 0.703);
     z-index: 3;
     position: absolute;
-    top: 2rem;
+    top: 1rem;
     left: 4rem;
 }
 
 .navbar a {
     text-decoration: none;
     font-family: 'IBM Plex Mono';
-    font-weight: 200;
-    font-size: 1.3rem;
+    font-weight: 400;
+    font-size: 1rem;
+    text-transform: uppercase;
 
 }
 
@@ -63,16 +64,18 @@ a:active {
 }
 
 .navbar li.active > a {
-    font-weight: 500;
-    color: #ffffffeb;
+    font-weight: 700;
+    color: #ffffff;
+    /* border-bottom: 1px solid rgb(0, 0, 0); */
+    border-radius: 0px;
 }
 
 .navbar li:nth-child(4) {
-    border-left: 1px solid #66666638;
+    border-left: 1px solid #e7e7e777;
 }
 
 .navbar ul li ul {
-    background-color: transparent;
+    background-color: black;
     visibility: hidden;
     min-width: 5rem;
     position: absolute;
@@ -91,15 +94,15 @@ ul li ul:hover {
     transition: color 0.12s ease, text-shadow 0.12s ease;
 }
 
-.navbar li:not(.active):not(.ads):hover {
-    color: #ffffff;
-    text-shadow: 1px 0.5px 7.5px rgba(255, 255, 255, 0.597);
+.main li:not(.active):not(.drop):hover {
+    color: rgba(255, 255, 255, 0.903);
+    text-shadow: 1px 0.5px 7.5px rgba(229, 229, 229, 0.597);
 }
 
-/* .navbar .ads:hover {
-    color: #ffffff;
-    text-shadow: 1px 0.5px 7.5px rgba(255, 255, 255, 0.597);
+/* .main li:not(.active):not(.drop):hover {
+    
 } */
+
 
 .navbar ul li ul li {
     clear: both;
