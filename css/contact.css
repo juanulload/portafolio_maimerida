@@ -1,23 +1,61 @@
-body#contact-page {
-    margin: 0;
-    box-sizing: border-box;
-    
+
+#contact-page {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
 }
 
 #sect-contact {
+    font-family: 'IBM Plex Sans';
     height: 100vh;
     margin: 0;
-    padding: 0;
-    background: url('../assets/13.jpg') 25%/cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    
+    display: block;
+    padding: 10% 5% 4.1%;
+    color: rgb(0, 0, 0);
+    backdrop-filter: blur(5.8px) contrast(95%);
+}
+
+.contact-card {
+    display: flex;
+    line-height: 3.5rem;
+    flex-direction: column;
+    font-size: 4rem;
+    font-weight: 700;
+    gap: 1.25rem;  
+    background-color: rgb(255, 255, 255);
+    /* box-shadow: 2px 2px 2px 1px rgba(144, 57, 57, 0.673); */
+    /* border: 2.5px solid rgb(255, 255, 255); */
+    border-radius: 2px;
+    padding: 3rem;
+    padding-inline: 2.5rem;
+    max-width: fit-content;
+    margin: 55px auto 15px 85px;
+}
+
+.contact-card_mail {
+    /* text-transform: ; */
+    font-weight: 300;
+    font-size: 2.50rem;
+}
+.contact-card_rrss {
+    line-height: 2rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: flex;
+    gap: 5rem;
+    letter-spacing: 5px;
 }
 
 
+
+
+
+
+
+/* 
 #cont-contact {
     position: relative;
-    height: 100vh;
     backdrop-filter: blur(7px);
     z-index: 2;
     display: flex;
@@ -28,7 +66,6 @@ body#contact-page {
 a:visited,
 a:active {
     text-decoration: none;
-    color:inherit;
     line-height: inherit;
 }
 
@@ -88,4 +125,4 @@ a:active {
 #sect-contact #cc_atrib:hover {
     color: rgb(218, 218, 218);
     text-shadow: 0 0 8px #ffffff;
-}
+} */
