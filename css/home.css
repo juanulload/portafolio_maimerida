@@ -1,4 +1,3 @@
-
 ::-webkit-scrollbar {
     width: 5px;
 }
@@ -25,78 +24,104 @@ body#index {
     background-size: 7px 7px;
 }
 
+body#index::after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+    content: url('../assets/13.jpg') url('../assets/desmemoria.jpeg') url('../assets/menu_img.jpeg');
+}
 
 /* LAND  */
 
+@keyframes slides {
+    0% {
+        background-image: url('../assets/13.jpg')
+    }
 
+    25% {
+        background-image: url('../assets/desmemoria.jpeg')
+    }
+
+    50% {
+        background-image: url('../assets/menu_img.jpeg');
+    }
+
+    75% {
+        background-image: url('../assets/13.jpg');
+    }
+}
 
 
 #sect_land {
     height: 100vh;
     margin: 0;
     padding: 0;
-    background: url('../assets/13.jpg') 50%/cover;
+    background-image: url('../assets/13.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    animation-name: slides;
+    animation-delay: 2.5s;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
-
 
 /* Info Bio */
 
 #title_land {
 
 
-    backdrop-filter: blur(8px);
-    background-color: #0000008a;
+    backdrop-filter: blur(5px);
+    background-color: #ffffffec;
 
-    margin: 0;
-    padding: 0.9rem 1.3rem 1.2rem 1.3rem;
-    /* padding-left: 1.7rem; */
-
+    margin: 0 0 4.5rem 0;
+    padding: 0.8rem 1.5rem 1rem 1.5rem;
 
     height: fit-content;
     width: fit-content;
 
-    border: 0.09rem solid #2c2c2c9f;
-    border-radius: 1.5px;
+    border: 0.05rem solid rgba(0, 0, 0, 0.785);
+    border-radius: 2px;
 
     position: absolute;
-    bottom: 16%;
-    left: 9%;
+    bottom: 2.5%;
+    left: 5%;
     z-index: 2;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 0.9rem;
+    gap: 0.7rem;
     list-style-type: none;
     font-family: 'IBM Plex Mono';
-    color: #ffffff;
+    color: #000000;
 }
 
 #name {
     background-color: #ffffff00;
     text-transform: capitalize;
-
     font-size: 3rem;
-    font-weight: 400;
+    font-weight: 500;
     line-height: normal;
-    /* padding-bottom: 0.1rem; */
-    letter-spacing: 4px;
+    letter-spacing: 1px;
 }
 
 #desc {
     text-transform: capitalize;
-    /* padding-left: 0.25rem; */
-    font-weight: 200;
-    font-size: 1.3rem;
+    font-weight: 300;
+    font-size: 1.2rem;
     letter-spacing: 0.5px;
 }
 
 #local {
     text-transform: capitalize;
     padding-left: 0.15rem;
-    font-weight: 200;
-    font-size: 1.20rem;
+    font-weight: 300;
+    font-size: 1.15rem;
     letter-spacing: 2px;
 }
 
@@ -105,18 +130,23 @@ body#index {
 
 #sect_bio {
     height: fit-content;
+    border-top: 0.4rem solid black;
 }
 
 
 #text_bio {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.527);
     backdrop-filter: blur(0.5px);
-    width: 65rem;
+    width: 75rem;
     height: fit-content;
 
     margin: auto;
     margin-block: 8rem;
     z-index: 2;
+    padding-block: 3rem;
+    padding-inline: 3rem;
+    border: 1.5px solid black;
+    border-radius: 1px;
 
     font-family: 'IBM Plex Sans';
     font-size: 1.5rem;
@@ -125,153 +155,19 @@ body#index {
     text-indent: 25px;
     text-align: justify;
     letter-spacing: 1.5px;
-
 }
 
 
 #text_bio>p {
-    margin-block: 10px;
+    margin-block: 1rem;
+}
+
+#text_bio>p:first-of-type {
+    margin-top: 0;
+}
+#text_bio>p:last-of-type {
+    margin-bottom: 0;
 }
 
 
 
-/* IMAGES */
-
-
-/* .img_land {
-background-color: rgba(255, 255, 255, 0.947);
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    position: static;
-    
-   z-index: 2;
-     }
-    
-img.img_land {
-         --anim_dur: 15s;
-         --anim_state: paused;
-     }
-    
-     .img_land#img_one {
-         opacity: 1;
-         max-width: 200vh;
-         top: 10%;
-         right: 8%;
-         border: 5px solid #ffffff;
-         animation-name: opac_timing_1;
-         animation-duration: var(--anim_dur);
-         animation-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.335);
-         animation-iteration-count: infinite;
-         animation-play-state: var(--anim_state);
-     }
-    
-     .img_land#img_two {
-         opacity: 1;
-         max-width: 22%;
-         bottom: 12%;
-         right: 15%;
-         background-color: #ffffff;
-         border: 5px solid #ffffff;
-         animation-name: opac_timing_2;
-         animation-duration: var(--anim_dur);
-         animation-timing-function: linear;
-         animation-iteration-count: infinite;
-         animation-play-state: var(--anim_state);
-     }
-    
-     .img_land#img_three {
-         opacity: 0;
-         max-width: 19%;
-         top: 4%;
-         left: 47%;
-         border: 5px solid #ffffff;
-         animation-name: opac_timing_3;
-         animation-duration: var(--anim_dur);
-         animation-timing-function: linear;
-         animation-iteration-count: infinite;
-         animation-play-state: var(--anim_state);
-     }
-    
-     @keyframes opac_timing_1 {
-         0% {
-             opacity: 0;
-         }
-    
-         1% {
-             opacity: 1;
-         }
-    
-         33% {
-             opacity: 1;
-         }
-    
-         35% {
-             opacity: 1
-         }
-         36% {
-             opacity: 0;
-         }
-    
-         66% {
-             opacity: 0;
-         }
-    
-         100% {
-             opacity: 0;
-         }
-     }
-    
-     @keyframes opac_timing_2 {
-         0% {
-             opacity: 0;
-         }
-    
-         25% {
-             opacity: 0;
-         }
-    
-         26% {
-             opacity: 1;
-         }
-    
-         35% {
-             opacity: 1
-         }
-    
-         66% {
-             opacity: 0;
-         }
-    
-         67% {
-             opacity: 1;
-         }
-    
-         100% {
-             opacity: 0;
-         }
-     }
-    
-     @keyframes opac_timing_3 {
-         0% {
-             opacity: 0;
-         }
-    
-         33% {
-             opacity: 0;
-         }
-    
-         65% {
-             opacity: 0;
-         }
-    
-         67% {
-             opacity: 1;
-         }
-    
-         99% {
-             opacity: 1;
-         }
-    
-         100% {
-             opacity: 0;
-         }
-     } */

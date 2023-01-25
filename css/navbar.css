@@ -1,6 +1,4 @@
-/* ///
-/// Globales
-///  */
+
 :root {
     --back-color-navbar: rgb(0, 0, 0);
     --navbar-border-radius: 2px;
@@ -21,10 +19,9 @@
     padding: 8px 34px;
     align-items: center;
     color: white;
-    /* text-decoration: ; */
     font-family: 'IBM Plex Sans Condensed';
-    font-weight: 400;
-    font-size: 0.90rem;
+    font-weight: 300;
+    font-size: 0.88rem;
     text-transform: uppercase;
 }
 
@@ -51,29 +48,25 @@ a:active {
 }
 
 .header a {
-    transition: text-decoration 2s;
+    transition: color 0.15s;
 }
 
-.navbar #contacto {
-    /* font-weight: 600; */
-    /* line-height: 1.25rem; */
-    /* font-size: 1rem; */
+/* .navbar #contacto {
     margin: 0;
     padding: 2.5px 25px;
+    transition: color .25s, background-color  .15s, font-weight .05s;
 }
 
-.navbar #contacto:hover {
+.navbar #contacto:hover:not(.active) {
     background-color: white;
     color: black;
-    /* outline: 0.110rem solid var(--brdr-col-navbar); */
     text-decoration: none;
-    font-weight: 600;
-}
+    font-weight: 400;
+} */
 
-.header a:hover:not(.active):not(#contacto) {
+.header a:hover:not(.active) {
     cursor: pointer;
-    text-decoration: underline 0.110rem ;
-    text-underline-offset: 4.25px;
+    color: rgba(255, 255, 255, 0.623);
 }
 
 .navbar a.active,

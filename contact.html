@@ -8,61 +8,43 @@
     <link href="./css/main.css" rel="stylesheet">
     <title>maite mérida</title>
 </head>
+<!-- style="background-image: url('../assets/13.jpg')" -->
 
-<body id="contact-page" style="background-image: url('../assets/13.jpg')">
-    <nav role="navigation" class="navbar">
-        <ul class="main">
-            <li class=""> <a href="./index.html">bio</a></li>
-            <li class="drop"><a href="#" style="pointer-events: none">proyectos</a>
-                <ul class="dropdown">
-                    <li class=""><a href="./portf_page.html">portafolio</a></li>
-                    <li class=""><a href="#">en curso</a></li>
-                    <li class=""><a href="#">experimental</a></li>
-                </ul>
-            </li>
-            <li class="active" id="contacto"><a href="#" style="pointer-events: none">contacto</a></li>
-            <li class="active" id="lang_es"><a href="#">esp</a></li>
-            <li class="" id="lang_en"><a href="#">eng</a></li>
-        </ul>
-    </nav>
+<body id="contact-page">
+
+    <header class="header">
+        <nav role="navigation" class="navbar">
+            <a class="" href="./index.html">bio</a>
+            <a href="./portf_page.html">portafolio</a>
+            <a href="#">en curso</a>
+            <a href="#">experimental</a>
+            <a class="active" id="contacto" href="./contact.html">contacto</a>
+        </nav>
+        <div class="nav_lang">
+            <a class="active" id="lang_es" href="#">es</a>
+            <a class="" id="lang_en" href="./contact-en.html">eng</a>
+        </div>
+    </header>
 
     <main id="sect-contact">
-        <div class="contact-card">
-            <img class="contact-card_img" src="./assets/mai_profile.jpg"></img>
-            <span class="contact-card_name">Maite Mérida Baeza</span>
-            <span class="contact-card_mail">maimeridabaeza@gmail.com</span>            
-            <div class="contact-card_rrss">
-                <a id="instagram" href="https://www.instagram.com/vocesendelay/"
-                    target="_blank">instagram</a>
-                    <a id="vimeo" href="https://vimeo.com/user30599169" target="_blank">vimeo</a>
-            </div>            
+        <div class="contact_card">
+            <div class="main_info">
+                <img class="contact_img" src="./assets/mai_profile.jpg"></img>
+                <span class="contact_name">Maite Mérida Baeza</span>
+            </div>
+            <div class="rrss_info">
+                <span id="email">maimeridabaeza@gmail.com</span>
+                <a id="instagram" href="https://www.instagram.com/vocesendelay/" target="_blank">instagram</a>
+                <a id="vimeo" href="https://vimeo.com/user30599169" target="_blank">vimeo</a>
+            </div>
         </div>
 
-        <!-- <div id="cc_atrib">
+        <div id="cc_atrib">
             <a href="https://juanulloa.com">// Diseño y código por Juan Ulloa, 2022 //</a></p>
-        </div> -->
-        
+        </div>
+
     </main>
 
 </body>
 
 </html>
-
-
-<!-- <div id="sect-contact">
-    <div id="cont-contact">
-        <ul id="contact_items">
-            <li class="contact_item" id="contact_mail">
-                email
-            </li>
-            <li class="contact_item"><a id="instagram" href="https://www.instagram.com/vocesendelay/"
-                    target="_blank">instagram</a></li>
-            <li class="contact_item"><a id="vimeo" href="https://vimeo.com/user30599169" target="_blank">vimeo</a>
-            </li>
-    </div>
-
-    <div id="cc_atrib">
-        <a href="https://juanulloa.com">// Diseño y código por Juan Ulloa, 2022 //</a></p>
-    </div>
-    
-</div> -->
