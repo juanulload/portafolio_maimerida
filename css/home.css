@@ -107,15 +107,15 @@ body#index::after {
     font-size: 2.1rem;
     font-weight: 700;
     line-height: 2.05rem;
-    letter-spacing: 8px;
+    letter-spacing: 5px;
 }
 
 #desc {
     /* padding-left: 0.05rem; */
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 1.18rem;
-    letter-spacing: 0.5px;
+    letter-spacing: 2.5px;
 }
 
 #local {
