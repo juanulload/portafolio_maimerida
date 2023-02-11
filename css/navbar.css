@@ -1,27 +1,27 @@
 
 :root {
-    --back-color-navbar: rgb(0, 0, 0);
+    /* --back-color-navbar: rgb(255, 255, 255); */
     --navbar-border-radius: 2px;
-    --brdr-col-navbar: rgba(255, 255, 255, 0.899);
+    --brdr-col-navbar: rgb(0, 0, 0);
 }
 
 .header {
     display: flex;
     position: fixed;
     z-index: 5;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     border-bottom: 0.095rem solid var(--brdr-col-navbar);
     top: 0;
     left: 0;
     right: 0;
     justify-content: space-between;
     height: fit-content;
-    padding: 0.75rem 1.6rem;
+    padding: 0.75rem 2.8rem;
     align-items: center;
-    color: white;
+    color: rgb(0, 0, 0);
     font-family: 'IBM Plex Sans Condensed';
-    font-weight: 300;
-    font-size: 0.875rem;
+    font-weight: 400;
+    font-size: 0.9rem;
     text-transform: uppercase;
 }
 
@@ -66,7 +66,7 @@ a:active {
 
 .header a:hover:not(.active) {
     cursor: pointer;
-    color: rgba(255, 255, 255, 0.623);
+    color: rgba(0, 0, 0, 0.703);
 }
 
 .navbar a.active,

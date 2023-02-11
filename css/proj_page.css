@@ -5,10 +5,10 @@
 }
 
 #portf_page {
-    background-position: center;
+    /* background-position: center;
     background-repeat: no-repeat;
-    background-size: 150%;
-
+    background-size: 150%; */
+    background-color: #000000;
 }
 
 
@@ -23,24 +23,24 @@ a:active {
     height: 100vh;
     margin: 0;
     display: block;
-    padding: 7% 5% 4.1%;
+    padding: 7% 5%;
     color: white;
-    backdrop-filter: blur(7px) brightness(110%) contrast(100%) grayscale(60%) hue-rotate(220deg);
+    /* backdrop-filter: blur(7px) brightness(110%) contrast(100%) grayscale(60%) hue-rotate(220deg); */
 }
 
 .proj-index_grid {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     flex-direction: column;
     gap: 0.7rem;
     box-sizing: content-box;
-    max-width: 50%;
+    max-width: 75%;
     margin: 0 auto;
 }
 
 .proj-tile-wrap {
-    padding: 0.08rem;
-    border: 3.5px solid rgb(21, 21, 21);
+    padding: 0.25rem;
+    border: 2px solid rgb(255, 255, 255);
     display: block;
 }
 
@@ -50,7 +50,7 @@ a:active {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 8rem;    
+    height: fit-content;    
 }
 
 .proj-tile::before {
