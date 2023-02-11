@@ -5,10 +5,10 @@
 }
 
 #portf_page {
-    /* background-position: center;
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: 150%; */
-    background-color: #000000;
+    background-size: 150%;
+    /* background-color: #ffffff; */
 }
 
 
@@ -25,7 +25,7 @@ a:active {
     display: block;
     padding: 7% 5%;
     color: white;
-    /* backdrop-filter: blur(7px) brightness(110%) contrast(100%) grayscale(60%) hue-rotate(220deg); */
+    backdrop-filter: blur(7px) brightness(180%) contrast(85%) grayscale(120%);
 }
 
 .proj-index_grid {
@@ -39,8 +39,9 @@ a:active {
 }
 
 .proj-tile-wrap {
-    padding: 0.25rem;
-    border: 2px solid rgb(255, 255, 255);
+    padding: 0;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 2px;
     display: block;
 }
 

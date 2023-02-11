@@ -27,7 +27,6 @@
 
 .navbar {
     display: flex;
-    gap: 2rem;
     z-index: 3;
     align-items: center;
 
@@ -51,22 +50,9 @@ a:active {
     transition: color 0.15s;
 }
 
-/* .navbar #contacto {
-    margin: 0;
-    padding: 2.5px 25px;
-    transition: color .25s, background-color  .15s, font-weight .05s;
-}
-
-.navbar #contacto:hover:not(.active) {
-    background-color: white;
-    color: black;
-    text-decoration: none;
-    font-weight: 400;
-} */
-
 .header a:hover:not(.active) {
     cursor: pointer;
-    color: rgba(0, 0, 0, 0.703);
+    color: rgba(0, 0, 0, 0.599);
 }
 
 .navbar a.active,
