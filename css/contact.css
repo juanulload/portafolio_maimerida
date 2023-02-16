@@ -1,51 +1,14 @@
 
 #contact-page {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;  
-    background-color: black;
+    background-color: rgb(255, 255, 255);
+
 }
 
-#sect-contact {
-    font-family: 'IBM Plex Sans';
-    height: 100vh;
-    margin: 0;
-    display: block;
-    padding: 10% 5% 4.1%;
-    color: rgb(0, 0, 0);
-    backdrop-filter: blur(5.8px) contrast(95%);
-}
 
 .contact-card {
-    display: flex;
-    line-height: 3.5rem;
-    font-size: 4rem;
-    font-weight: 700;
-    gap: 1.25rem;  
-    background-color: rgb(255, 255, 255);
-    border-radius: 2px;
-    padding: 3rem;
-    padding-inline: 2.5rem;
-    max-width: fit-content;
-    margin: 55px auto 15px 85px;
+
 }
 
-.contact-card_img {
-    width: 5rem;
-    height: auto;
-}
+.rrss_info {
 
-.contact-card_mail {
-    font-weight: 300;
-    font-size: 2.50rem;
-}
-.contact-card_rrss {
-    line-height: 2rem;
-    font-size: 1.8rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    display: flex;
-    flex-direction: column;
-    gap: 5rem;
-    letter-spacing: 5px;
 }
